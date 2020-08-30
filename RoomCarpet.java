@@ -1,6 +1,6 @@
 public class RoomCarpet {
 
-    RoomDimension size;
+    RoomDimension size = new RoomDimension();
     double carpetCost;
 
     public RoomCarpet (RoomDimension dim, double cost){
@@ -15,7 +15,7 @@ public class RoomCarpet {
     }
 
     //returns _____ as a string 
-    // public String toString(){
-    //     return length + " X " + width;
-    // }
+    public String toString(){
+        return size.getArea() + " X " + carpetCost;
+    }
 }

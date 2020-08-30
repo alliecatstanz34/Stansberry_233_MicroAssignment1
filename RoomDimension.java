@@ -2,6 +2,10 @@ public class RoomDimension {
     double length;
     double width;
 
+    //constructs an empty RoomDimension
+    public RoomDimension (){
+
+    }
     //constructs a RoomDimension with the given length and width
     public RoomDimension (double lengthIn, double widthIn){
         length = lengthIn;
