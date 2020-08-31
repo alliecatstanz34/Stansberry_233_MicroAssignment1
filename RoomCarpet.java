@@ -9,14 +9,14 @@ public class RoomCarpet {
         carpetCost = cost;
     }
 
-    //returns the total cost of the carpet with the given carpet area
+    //returns as a double, the total cost of the carpet with the given carpet area
     //and carpet cost 
     public double getTotal(){
         return size.getArea() * carpetCost;
     }
 
-    //returns area and total cost as a string 
+    //returns total cost as a string 
     public String toString(){
-        return size.getArea() + " X " + getTotal();
+        return getTotal() + "";
     }
 }

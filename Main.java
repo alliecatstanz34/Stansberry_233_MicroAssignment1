@@ -6,16 +6,38 @@ Date: 08/30/2020
 GIT Repo URL: https://github.com/alliecatstanz34/Stansberry_233_MicroAssignment1  
 */
 
+import java.util.Scanner;
+
 public class Main {
     
     public static void main (String [] args){
-        RoomDimension test = new RoomDimension(3,4);
 
-        RoomCarpet testCarpet = new RoomCarpet(test, 7);
+        double length, width;
+        double pricePerFoot;
+        RoomDimension newRoom;
+        RoomCarpet newRoomPrice;
+        Scanner readme = new Scanner(System.in);
+        
+        //asks user for the dimensions of the room they want to carpet 
+        System.out.println("Enter the length then width, in feet, of the room you wish to carpet: ");
+        System.out.println("Press Enter after each input: ");
+        
+        //makes a new room with the dimensions given by the user 
+        length = readme.nextDouble();
+        width = readme.nextDouble();
+        newRoom = new RoomDimension(length, width);
+        
+        //asks user for the price of the carpet per square foot
+        System.out.println("Enter the cost of the carpet per square foot: ");
+        System.out.println("Press Enter after input: ");
 
-        System.out.println("Total area: " + test.getArea());
-        System.out.println("Dimensions: " + test.toString());
-        System.out.println("Total Cost: " + testCarpet.getTotal());
-        System.out.println("Area and Cost: " + testCarpet.toString());
+        //makes a new RoomCarpet with the price and demensions given by the user
+        pricePerFoot = readme.nextDouble();
+        newRoomPrice = new RoomCarpet(newRoom, pricePerFoot);
+
+        //displays the total cost of the carpet 
+        System.out.println("The total cost for carpet inyour room is: " + newRoomPrice);
+
+        readme.close();
     }
 }

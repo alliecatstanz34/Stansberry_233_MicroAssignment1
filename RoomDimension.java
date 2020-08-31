@@ -17,8 +17,8 @@ public class RoomDimension {
         return length * width;
     }
 
-    //returns the length and width of RoomDimension as string 
+    //returns the area of RoomDimension  
     public String toString(){
-        return length + " X " + width;
+        return getArea() + "" ;
     }
 }
