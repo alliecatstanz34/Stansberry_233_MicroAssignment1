@@ -1,3 +1,11 @@
+
+/*
+Name: Allison Stansberry
+CPT_S 233: Micro Assignment #1
+Date: 08/30/2020
+GIT Repo URL: https://github.com/alliecatstanz34/Stansberry_233_MicroAssignment1  
+*/
+
 public class Main {
     
     public static void main (String [] args){
