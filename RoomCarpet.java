@@ -3,6 +3,7 @@ public class RoomCarpet {
     RoomDimension size = new RoomDimension();
     double carpetCost;
 
+    //constructs a RoomCarpet object with the given RoomDimension and cost 
     public RoomCarpet (RoomDimension dim, double cost){
         size = dim;
         carpetCost = cost;
@@ -14,8 +15,8 @@ public class RoomCarpet {
         return size.getArea() * carpetCost;
     }
 
-    //returns _____ as a string 
+    //returns area and total cost as a string 
     public String toString(){
-        return size.getArea() + " X " + carpetCost;
+        return size.getArea() + " X " + getTotal();
     }
 }
