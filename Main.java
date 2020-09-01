@@ -36,7 +36,7 @@ public class Main {
         newRoomPrice = new RoomCarpet(newRoom, pricePerFoot);
 
         //displays the total cost of the carpet 
-        System.out.println("The total cost for carpet in your room is: " + newRoomPrice);
+        System.out.println("The total cost to cover the floor with carpet is: $" + newRoomPrice);
 
         readme.close();
     }
